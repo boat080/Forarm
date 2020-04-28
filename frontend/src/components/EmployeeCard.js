@@ -38,12 +38,26 @@ const EmployeeCard = (props)=>{
     
     return(
         <div >
-          <li>{props.name} {props.surname} :{props.id} : {props.tel} : {props.mail}
-          <button onClick={deleteEmployee}>Delete</button>
-          <button onClick={updateEmployee}>Update</button>
-
-          </li>
-    </div>
+          <table id="customers">
+            <tr>
+              <th>Name</th>
+              <th>Surname</th>
+              <th>Work/Day</th>
+              <th>Tel.</th>
+              <th>Email</th>
+              <th>Edit</th>
+            </tr>
+            <tr>
+              <td>{props.name}</td>
+              <td>{props.surname}</td>
+              <td>{props.day}</td>
+              <td>{props.tel}</td>
+              <td>{props.mail}</td>
+              <button onClick={deleteEmployee}>Delete</button>
+              <button onClick={updateEmployee}>Update</button>
+            </tr>
+          </table>
+        </div>
     )
 
 

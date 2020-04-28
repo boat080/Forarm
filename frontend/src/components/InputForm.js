@@ -46,11 +46,11 @@ const InputForm = props => {
                         </td>
                     </tr>
                     <tr>
-                        <td>ID</td>
+                        <td>Work/Day</td>
                         <td>
                         <input className='inpt'
                                 type="text"
-                                onChange={(e) => dispatch({ type: 'CHANGE_ID', id: e.target.value })}
+                                onChange={(e) => dispatch({ type: 'CHANGE_ID', day: e.target.value })}
                         />   
                         </td>
                     </tr>
@@ -67,7 +67,7 @@ const InputForm = props => {
                         <td>Email</td>
                         <td>
                         <input className='inpt'
-                                type="number"
+                                type="text"
                                 onChange={(e) => dispatch({ type: 'CHANGE_MAIL', mail: e.target.value })}
                         />   
                         </td>

@@ -13,7 +13,7 @@ function Nav(){
             <h3>Soutern Infomation Technology</h3>
             <ul className ="nav-links">
                 <Link style={navStyle} to="/About">
-                    <li><h4 class="btn btn-danger">About</h4></li>
+                    <li><h4 class="btn btn-danger">ตารางทำงานและพนักงาน</h4></li>
                 </Link>
                 <Link style={navStyle} to="/Admin">
                     <li><h4 class="btn btn-danger">Admin</h4></li>
